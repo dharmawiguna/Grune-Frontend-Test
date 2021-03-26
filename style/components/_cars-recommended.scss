@@ -1,0 +1,256 @@
+html{
+  scroll-behavior: smooth;
+}
+
+.wrapper{
+  overflow-x: auto; 
+  display: flex;
+}
+
+.wrapper .item{
+  min-width:300px; 
+  margin-right:20px;
+}
+
+
+.component-cars-recommended {
+  margin-bottom: 20px;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  .cars-recommended-thumbnail {
+    width: 100%;
+    height: 150px;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+    &:hover,
+    &:focus {
+      .cars-recommended-image {
+        transform: scale(1.1);
+      }
+    }
+
+    .cars-recommended-image {
+      width: 100%;
+      height: 100%;
+
+      background-color: #ddd;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      transition: all 0.3s ease;
+    }
+  }
+
+  
+}
+
+.cars-recommended-text {
+  font-size: 18px;
+  font-weight: normal;
+  color: #0c0d36;
+}
+
+.cars-recommended-price {
+  font-weight: 500;
+  font-size: 16px;
+  color: #ff7158;
+}
+
+.favorite-cars{
+  img{
+    width:30px;
+    height:auto;    
+  }
+}
+
+.detail-cars{
+  float: left;
+  border:solid 1px #000;
+  width: 50%;
+  box-shadow: 1px 3px 2px #949494;
+  align-items:center;
+  margin:auto;
+  padding-top:5px;
+  padding-left:20px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+
+  span{
+    font-size:18px;
+    font-weight:normal;
+    color: #0c0d36;
+  }
+
+  img{
+    width:10px;
+    height:auto;    
+  }
+}
+
+.nav-pills {
+  .nav-link {
+    font-weight: normal;
+    font-size: 18px;
+    color: #9191a9;
+    border-radius: 0;
+
+    &.active {
+      font-weight: 500;
+      font-size: 18px;
+      color: #0c0d36;
+      border-bottom: 2px solid #0c0d36;
+      background: none;
+    }
+  }
+}
+
+.option_item{
+  position:relative;
+
+  .checkbox{
+    position:absolute;
+    top:10px;
+    right:10px;
+    z-index:1;
+    opacity:1;
+  }
+
+  .checkbox:checked ~ .option_inner{
+    border-color:#25D366;
+    color:#ff7158;
+    font-weight:500;
+  }
+
+  .option_inner{
+    cursor: pointer;
+    display: block;
+    border: 5px solid transparent;
+    position: relative;
+
+    .car-image{
+      border:1px solid transparent;
+    }
+
+    .car-type{
+      text-align: center;
+    }
+
+    .tickmark{
+      position:absolute;
+      top:0px;
+      left:0px;
+      border:20px solid;
+      border-color: #25D366 transparent transparent #25D366;
+
+      &:before{
+        content: "";
+        position: absolute;
+        top: -12px;
+        left: -16px;
+        width: 15px;
+        height: 5px;
+        border:3px solid red;
+        border-color: transparent transparent #fff #fff;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+.select-box{
+  width: 300px;
+  position:relative;
+
+
+  select{
+    height: 42px;
+    padding: 10px 15px;
+    line-height: 20px;
+    font-size: 16px;
+    width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    -webkit-appearance: none;
+    appearance: none;
+    
+
+    &:focus{
+      border :2px solid #25D366;
+    }
+  }
+
+  &:after{
+    content: "";
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    margin-top: 12px;
+    border-top: 8px solid #25D366;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    pointer-events: none;
+  }
+}
+
+.toogle{
+  width: 180px;
+  position: relative;
+  border-radius: 25px;
+  background: white;
+  height: 40px;
+  border: 1px solid #25D366;
+
+  #btn{
+    left: 0;
+    top: -1px;
+    position: absolute;
+    width: 90px;
+    height: 40px;
+    background: #25D366;
+    border-radius: 25px;
+    border: none;
+    transition:.5s;
+  }
+
+  #btn2{
+    left: 0;
+    top: -1px;
+    position: absolute;
+    width: 90px;
+    height: 40px;
+    background: #25D366;
+    border-radius: 25px;
+    border: none;
+    transition:.5s;
+  }
+
+  .toggle-btn{
+    padding: 8px 32px;
+    cursor: pointer;
+    background: transparent;
+    color: black;
+    outline: none;
+    position: relative;
+    text-align: center;
+    border: none;
+  }
+}
+
+ #btnScrollToTop{
+    position:fixed;
+    right: 10px;
+    bottom:10px;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    cursor:pointer;
+  }

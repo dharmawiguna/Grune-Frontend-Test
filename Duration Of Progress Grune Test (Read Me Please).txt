@@ -1,0 +1,8 @@
+==============Duration Of Progress Grune Test==============
+*FrontEnd Test
+Minggu,  21 Maret 2021 (08.45 - 18.56 WITA)
+
+*BackEnd Test
+Senin, 22 Maret 2021 (23.36 - 02.05 WITA)
+Selasa, 23 Maret 2021 (19.10 - 01.33 WITA)
+Rabu, 24 Maret 2021 (12.00 - 14.10 & 19.15 - 22.15)
